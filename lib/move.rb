@@ -6,15 +6,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# code your input_to_index and move method here!
-def input_to_index
-  puts " 1 | 2 | 3 "
-  puts "-----------"
-  puts " 4 | 5 | 6 "
-  puts "-----------"
-  puts " 7 | 8 | 9 "
-end
-
 def move
   puts " #{self.board_move[1]} | #{self.board_move[2]} | #{self.board_move[3]} "
   puts "-----------"
