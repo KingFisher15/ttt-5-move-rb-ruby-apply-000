@@ -6,16 +6,12 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def move
-  puts " #{self.board_move[1]} | #{self.board_move[2]} | #{self.board_move[3]} "
-  puts "-----------"
-  puts " #{self.board_move[4]} | #{self.board_move[5]} | #{self.board_move[6]} "
-  puts "-----------"
-  puts " #{self.board_move[7]} | #{self.board_move[8]} | #{self.board_move[9]} "
+# code your input_to_index and move method here!
+
+def input_to_index(user_input)
+  user_input.to_i - 1
 end
 
-def board_move
-  @board_move ={"1" => " ".to_i, "2" => " ".to_i, "3" => " ".to_i,
-  "4" => " ", "5" => " ","6" => " ",
-  "7" => " ", "8" => " ", "9" => " "}
+def move(board, index, current_player = "X")
+  board[index] = current_player
 end
